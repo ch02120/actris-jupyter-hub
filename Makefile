@@ -23,7 +23,7 @@ help:
 
 virtual-environment: $(VENV_DIR)  ## update venv, create a new venv if it doesn't exist make
 	echo "If you want this to be rerun, run make clean first"
-$(VENV_DIR): setup.py setup.cfg
+$(VENV_DIR): setup.py
 	[ -d $(VENV_DIR) ] || python3 -m venv $(VENV_DIR)
 	$(VENV_DIR)/bin/pip install --upgrade pip wheel
 	$(VENV_DIR)/bin/pip install -r requirements.txt
