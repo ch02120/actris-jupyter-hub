@@ -6,7 +6,7 @@ __pycache__/
 # Tempfiles
 *~
 *#
-*.png
+#*.png
 
 # C extensions
 *.so
